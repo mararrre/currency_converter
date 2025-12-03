@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Dollar</title>
+    <link rel="icon" href="resources/images/dollar_icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="header">
+        <h1>"Dollar" - convert currency of any country instantly</h1>
+    </div>
+
+    <div id="block">
+        <div id="frames">
+            <div class="left_box">
+                <div class="top">
+                    <input type="text" id="fromCurrency" name="mainCurrency">
+                </div>
+                <div class="bottom">
+                <input type="number" id="fromAmount" name="amount">
+                </div>
+            </div>
+
+            <img src="resources/images/convert_image.png">
+
+            <div class="right_box">
+                <div class="top">
+                    <input type="text" id="toCurrency" name="secondCurrency">
+                </div>
+                <div class="bottom">
+                    <input type="number" id="toAmount" name="result">
+                </div>
+            </div>
+        </div>
+
+        <button id="convert_btn">convert</button>
+        <p id="error_box"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
