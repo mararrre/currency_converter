@@ -136,13 +136,13 @@ html, body {
 #error_box {
     max-width: 300px;
     min-height: 40px; 
-    background-color: #ffe6e6;
-    border: 2px solid #c92636;
+    background-color: rgb(255,230,230);
+    border: 2px solid rgb(201, 38, 54);
     border-radius: 5px;
     display: inline-block;
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
-    color: #d32f2f;
+    color: rgb(211, 47, 47);
     padding: 5px 10px; 
     text-align: center;
     opacity: 0;
