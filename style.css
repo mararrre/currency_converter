@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text');
 
+* { box-sizing: border-box; }
+
 html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(181, 235, 161);
+    overflow: hidden;
 }
 
 #header {
@@ -151,4 +154,53 @@ html, body {
 
 #error_box.show {
     opacity: 1;
+}
+
+@media (max-width: 600px) {
+
+    #header {
+        height: 70px;
+    }
+
+    #header h1 {
+        font-size: 18px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .left_box,
+    .right_box {
+        height: 150px;
+        width: 240px;
+        gap: 15px;
+    }
+    
+    .left_box .bottom input,
+    .right_box .bottom input {
+        width: 150px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .left_box .top input, 
+    .right_box .top input {
+        height: 40px;
+        width: 120px;
+    }
+
+    #frames img {
+        width: 30px;
+        height: auto;
+    }
+
+    #frames {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #convert_btn {
+        height: 40px;
+        width: 140px;
+        font-size: 18px; 
+    }
 }
